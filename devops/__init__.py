@@ -1,0 +1,1 @@
+ENVIRONMENTS = ['qa', 'prod']

@@ -1,0 +1,12 @@
+##########################################
+# Cluster Admin Role in staging
+##########################################
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: tiller-manager
+  namespace: staging
+rules:
+- apiGroups: ["", "extensions", "batch", "apps", "namespaces"]
+  resources: ["*"]
+  verbs: ["*"]

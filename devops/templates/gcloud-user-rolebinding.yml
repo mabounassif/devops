@@ -1,0 +1,20 @@
+##########################################
+# RoleBinding for gcloud user
+# should translate to the following:
+#
+# kubectl create clusterrolebinding cluster-admin-binding \
+# --clusterrole cluster-admin \
+# --user $(gcloud config get-value account)
+##########################################
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: cluster-admin
+subjects:
+- kind: User
+  name: mahmoud.abounassif@gmail.com
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io
+
