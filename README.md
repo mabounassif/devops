@@ -1,19 +1,22 @@
-# utils
+# Devops
 
-Devops utils
+Devops tools to deploy applications on Kubernetes with ease. It currently only supports deployment on Google Cloud. We are expecting to include other providers in the near future.
 
+### Prerequisites
 
-# Installation
+Devops assumes that you have working `kubectl` and `helm` command line tools.
 
-If you don't use `pipsi`, you're missing out.
-Here are [installation instructions](https://github.com/mitsuhiko/pipsi#readme).
+### Installation
+
+If you don't use `pip`, you're missing out.
+Here are [installation instructions](https://pip.pypa.io/en/stable/installing/).
 
 Simply run:
 
-    $ pipsi install .
+    $ pip install devops
 
 
-# Usage
+### Usage
 
 To use it:
 
