@@ -3,7 +3,7 @@ Devops utils
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click']
+dependencies = ['click', 'jinja2', 'kubernetes']
 
 setup(
     name='devops',

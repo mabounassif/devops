@@ -1,6 +1,6 @@
-import os
+from devops import env
 
-dir_name = os.path.abspath(os.path.realpath(__file__))
+def get_template(template_name):
+    template = env.get_template('%s.j2' % template_name)
+    return template.render()
 
-def get_abs_template(template_path):
-    return os.path.abspath(os.path.join(dir_name, '../templates', template_path))

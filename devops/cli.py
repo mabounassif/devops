@@ -1,14 +1,14 @@
 import click
 
 from devops.helm import helm
-from devops.gcloud import gcloud
+from devops.kube import kube
 
 @click.group()
 def main():
     pass
 
 main.add_command(helm)
-main.add_command(gcloud)
+main.add_command(kube)
 
 if __name__ == '__main__':
     main()
